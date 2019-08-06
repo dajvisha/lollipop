@@ -3,7 +3,9 @@ import './Button.css';
 
 function Button(props) {
   return (
-    <button className={`button ${props.selected ? 'selected' : ''}`} onClick={props.onClick}>{props.label}</button>
+    <a className={`button ${props.selected ? 'selected' : ''}`} onClick={props.onClick}>
+      {props.children}
+    </a>
   );
 }
 
