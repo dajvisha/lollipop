@@ -1,9 +1,19 @@
 .menu {
-  width: 20vw;
+  width: 16vw;
   height: 100vh;
   padding-left: 45px;
   padding-right: 45px;
   background-color: #fff;
+}
+
+.menuSection {
+  padding-top: 20px;
+}
+
+.menuSection p {
+  color: #3d4853;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .logo {
