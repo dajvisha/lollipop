@@ -5,7 +5,7 @@
 }
 
 .menuSection {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .menuSection p {
@@ -16,7 +16,17 @@
 
 .logo {
   color: #FE2047;
-  font-size: 50px;
+  font-size: 35px;
   font-family: 'Pacifico', cursive;
-  padding-top: 45px;
+  padding-top: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.directionImg {
+  height: 15px;
+  width: 15px;
 }
