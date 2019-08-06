@@ -1,8 +1,9 @@
 .menu {
   width: 20vw;
   height: 100vh;
-  padding-right: 45px;
   padding-left: 45px;
+  padding-right: 45px;
+  background-color: #fff;
   -webkit-box-shadow: 0px 0px 3px 5px #ccc;
   -moz-box-shadow:    0px 0px 3px 5px #ccc;
   box-shadow:         0px 0px 3px 5px #ccc;
