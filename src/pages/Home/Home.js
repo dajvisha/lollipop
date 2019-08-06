@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './../../components/Menu';
+import constants from '../../helpers';
 import './Home.css';
 
 class Home extends React.Component {
@@ -7,7 +8,7 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      gradientType: "",
+      gradientType: constants.GRADIENT_TYPE.LINEAR,
       gradientDirection: "",
       gradientColorOne: "",
       gradientColorTwo: "",
@@ -19,12 +20,18 @@ class Home extends React.Component {
 
   toggleChangeGradient = (attribute) => {
     this.setState(state => (attribute));
+    this.createGradient();
+  }
+
+  createGradient = () => {
+    let gradient = `${this.state.gradientType}(#F8D353, #FF5C5A)`;
+    this.setState(state => ({gradient: {backgroundImage: gradient}}))
   }
 
   render() {
     return (
       <div style={this.state.gradient}>
-        <Menu toggleChangeGradient={this.toggleChangeGradient}/>
+        <Menu toggleChangeGradient={this.toggleChangeGradient} gradientType={this.state.gradientType} />
       </div>
     );
   }
