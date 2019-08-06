@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.menu {
+  flex: 25%;
+}
+
+.gradient {
+  flex: 75%;
+}

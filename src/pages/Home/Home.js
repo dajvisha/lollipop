@@ -30,8 +30,11 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div style={this.state.gradient}>
-        <Menu toggleChangeGradient={this.toggleChangeGradient} gradientType={this.state.gradientType} />
+      <div className="container">
+        <Menu className="menu"
+              gradientType={this.state.gradientType}
+              toggleChangeGradient={this.toggleChangeGradient}/>
+        <div className="gradient" style={this.state.gradient}></div>
       </div>
     );
   }
