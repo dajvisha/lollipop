@@ -1,10 +1,11 @@
 import React from 'react';
+import Menu from './../../components/Menu';
 import './Home.css';
 
 function Home() {
   return (
-    <div className="App">
-      Welcome to Lollipop.
+    <div>
+      <Menu />
     </div>
   );
 }
