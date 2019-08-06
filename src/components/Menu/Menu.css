@@ -4,9 +4,6 @@
   padding-left: 45px;
   padding-right: 45px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 3px 5px #ccc;
-  -moz-box-shadow:    0px 0px 3px 5px #ccc;
-  box-shadow:         0px 0px 3px 5px #ccc;
 }
 
 .logo {
