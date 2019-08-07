@@ -1,7 +1,8 @@
 import React from 'react';
-import Button from '../widgets/Button';
-import constants from '../../helpers';
 import './Menu.css';
+import StyleOptions from './Options/StyleOptions';
+import DirectionOptions from './Options/DirectionOptions';
+import ColorOptions from './Options/ColorOptions';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -13,32 +14,22 @@ class Menu extends React.Component {
       <div className="menu">
         <div className="logo"><span role="img">🍭</span> Lollipod</div>
         <div className="menuSection">
+          <p>Colors</p>
+          <ColorOptions colorOne={this.props.gradientColorOne}
+                        colorTwo={this.props.gradientColorTwo}
+                        toggleChangeColor={this.props.toggleChangeColor}/>
+        </div>
+        <div className="menuSection">
           <p>Style</p>
-          {styleOptions(this.props)}
+          {StyleOptions(this.props)}
         </div>
         <div className="menuSection">
           <p>Direction</p>
-        </div>
-        <div className="menuSection">
-          <p>Colors</p>
+          {DirectionOptions(this.props)}
         </div>
       </div>
     );
   }
-}
-
-function styleOptions(props) {
-  let { gradientType, toggleChangeGradient } = props; 
-  return (
-    <div>
-      <Button label="Linear"
-              selected={gradientType === constants.GRADIENT_TYPE.LINEAR}
-              onClick={(_) => toggleChangeGradient({gradientType: constants.GRADIENT_TYPE.LINEAR})} />
-      <Button label="Radial"
-              selected={gradientType === constants.GRADIENT_TYPE.RADIAL} 
-              onClick={(_) => toggleChangeGradient({gradientType: constants.GRADIENT_TYPE.RADIAL})} />
-    </div>
-  );
 }
 
 export default Menu;
