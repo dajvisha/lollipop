@@ -3,6 +3,7 @@ import './Menu.css';
 import StyleOptions from './Options/StyleOptions';
 import DirectionOptions from './Options/DirectionOptions';
 import ColorOptions from './Options/ColorOptions';
+import Text from './../widgets/Text/Text';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -29,6 +30,10 @@ class Menu extends React.Component {
         <div className="menuSection">
           <p>Direction</p>
           {DirectionOptions(this.props)}
+        </div>
+        <div className="menuSection">
+          <p>CSS</p>
+          <Text>{this.props.gradient}</Text>
         </div>
       </div>
     );

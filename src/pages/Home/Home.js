@@ -40,6 +40,7 @@ class Home extends React.Component {
     return (
       <div className="container">
         <Menu className="menu"
+              gradient={`background-image: ${this.state.gradient.backgroundImage};`}
               gradientType={this.state.gradientType}
               gradientDirection={this.state.gradientDirection}
               gradientColorOne={this.state.gradientColorOne}
