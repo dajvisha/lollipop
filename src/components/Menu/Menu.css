@@ -30,3 +30,24 @@
   height: 15px;
   width: 15px;
 }
+
+.colorPicker {
+  width: 80px;
+  height: 35px;
+  display: inline-block;
+  box-shadow: 0 0 0 1px #f1f4f8;
+  margin-right: 5px;
+}
+
+.popover {
+  position: absolute;
+  z-index: 2;
+}
+
+.cover {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
