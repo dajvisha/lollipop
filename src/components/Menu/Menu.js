@@ -12,7 +12,10 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <div className="logo"><span role="img">🍭</span> Lollipod</div>
+        <div className="logo">
+          <span role="img">🍭</span>
+          <span style={{color: this.props.gradientColorOne}}>Lollipod</span>
+        </div>
         <div className="menuSection">
           <p>Colors</p>
           <ColorOptions colorOne={this.props.gradientColorOne}
